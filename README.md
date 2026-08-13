@@ -17,7 +17,7 @@
 </p>
 
 > **Project context**
-> 3adeny is a production-oriented graduation project developed for the **NTI Machine Learning Summer Training Diploma**. The public repository contains the project documentation and presentation material, while the full implementation remains private.
+> 3adeny is a production-oriented graduation project developed for the **NTI Machine Learning Summer Training Diploma**. The public repository contains only the project documentation.
 
 ---
 
@@ -753,16 +753,6 @@ The architecture is designed to support expansion beyond the current MVP.
 ---
 
 # Team / Credits
-
-<div align="center">
-
-### NTI Machine Learning Summer Training Diploma
-
-**Graduation Project**
-
-Developed by the **3adeny Team**
-
-</div>
 
 | Member             |                          Portfolio                          |                          LinkedIn                          |                    GitHub                     |                  Email                   |
 | :----------------- | :---------------------------------------------------------: | :--------------------------------------------------------: | :-------------------------------------------: | :--------------------------------------: |
