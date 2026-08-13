@@ -750,15 +750,34 @@ The architecture is designed to support expansion beyond the current MVP.
 - Vercel — https://vercel.com/
 - Render — https://render.com/
 
-> **Dataset / scraping note:** Before publishing raw data, derived datasets, or scraped job content, verify the license/usage rights of each source and the applicable terms of the upstream platforms. This README documents the project's use of those sources but does not grant redistribution rights.
-
 ---
 
 # Team / Credits
 
-**3adeny** was developed as a graduation project for the **NTI Machine Learning Summer Training Diploma**.
+<div align="center">
 
-_Add team members, supervisors, repository links, and contact information here before publication._
+### NTI Machine Learning Summer Training Diploma
+
+**Graduation Project**
+
+Developed by the **3adeny Team**
+
+</div>
+
+| Member             |                          Portfolio                          |                          LinkedIn                          |                    GitHub                     |                  Email                   |
+| :----------------- | :---------------------------------------------------------: | :--------------------------------------------------------: | :-------------------------------------------: | :--------------------------------------: |
+| **Mazen Mohsen**   |        [Portfolio](https://mazen4dev.cu-portal.com)         |   [LinkedIn](https://www.linkedin.com/in/mazenmohsen15)    |    [GitHub](https://github.com/Mazen91235)    | [Email](mailto:mazenmohsen24@gmail.com)  |
+| **Renad Amr**      |     [Portfolio](https://renad29amr.github.io/portfolio)     |     [LinkedIn](https://www.linkedin.com/in/renad-amr)      |    [GitHub](https://github.com/renad29amr)    |  [Email](mailto:renadamr.bls@gmail.com)  |
+| **Nancy Ashraf**   | [Portfolio](https://nancy-ashraf-george-e4px8l6.gamma.site) |    [LinkedIn](https://www.linkedin.com/in/nancyashraff)    |   [GitHub](https://github.com/nancyashraff)   | [Email](mailto:Nancyashraf834@gmail.com) |
+| **Youssef Hamada** | [Portfolio](https://www.linkedin.com/in/youssefhamadawahba) | [LinkedIn](https://www.linkedin.com/in/youssefhamadawahba) | [GitHub](https://github.com/YoussefHamada101) |  [Email](mailto:youssefw333@gmail.com)   |
+
+---
+
+### Acknowledgments
+
+We sincerely thank the **National Telecommunication Institute (NTI)** for organizing the **Machine Learning Summer Training Diploma**, which provided the opportunity, guidance, and learning environment that made this project possible.
+
+We also extend our appreciation to our instructors (Eng. Abdelrahman Bakeer, Eng. Nancy Ahmed) for their continuous support, technical guidance, and valuable feedback throughout the development of **3adeny**.
 
 ---
 
