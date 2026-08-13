@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="YOUR_PLATFORM_URL">Live Platform</a> •
+  <a href="https://career-automation-frontend.vercel.app">Live Platform</a> •
   <a href="#how-it-works">How It Works</a> •
   <a href="#machine-learning-pipeline">ML Pipeline</a> •
   <a href="#architecture">Architecture</a>
@@ -26,19 +26,19 @@
 - [Overview](#overview)
 - [What 3adeny Does](#what-3adeny-does)
 - [Product Walkthrough](#product-walkthrough)
-  - [Landing Page](#landing-page)
-  - [Choose a Workflow](#choose-a-workflow)
-  - [Settings and AI Models](#settings-and-ai-models)
-  - [Roles Explorer](#roles-explorer)
-  - [Matching Listings](#matching-listings)
-  - [Tailoring Results](#tailoring-results)
-  - [Direct Job Tailor](#direct-job-tailor)
-  - [Loading Game](#loading-game)
+    - [Landing Page](#landing-page)
+    - [Choose a Workflow](#choose-a-workflow)
+    - [Settings and AI Models](#settings-and-ai-models)
+    - [Roles Explorer](#roles-explorer)
+    - [Matching Listings](#matching-listings)
+    - [Tailoring Results](#tailoring-results)
+    - [Direct Job Tailor](#direct-job-tailor)
+    - [Loading Game](#loading-game)
 - [Core Features](#core-features)
 - [How It Works](#how-it-works)
-  - [1. Explore Roles From My CV](#1-explore-roles-from-my-cv)
-  - [2. I Already Have a Job in Mind](#2-i-already-have-a-job-in-mind)
-  - [3. Analyze My CV](#3-analyze-my-cv)
+    - [1. Explore Roles From My CV](#1-explore-roles-from-my-cv)
+    - [2. I Already Have a Job in Mind](#2-i-already-have-a-job-in-mind)
+    - [3. Analyze My CV](#3-analyze-my-cv)
 - [Machine Learning Pipeline](#machine-learning-pipeline)
 - [Job Matching and Similarity](#job-matching-and-similarity)
 - [Automated Job Alerts](#automated-job-alerts)
@@ -59,7 +59,7 @@
 
 ## Overview
 
-**3adeny** (Arabic: **عدّني** — *“let the CV pass”*) is a career automation platform built around one idea: **a job match should be explainable, not just a black-box percentage**.
+**3adeny** (Arabic: **عدّني** — _“let the CV pass”_) is a career automation platform built around one idea: **a job match should be explainable, not just a black-box percentage**.
 
 The platform processes a candidate's CV, extracts meaningful skills and keywords, creates semantic embeddings, compares the candidate against job roles and listings, and then uses an LLM to generate a detailed analysis and tailored application documents.
 
@@ -71,11 +71,11 @@ The platform currently focuses on **technology roles** and combines classical si
 
 ### Three main entry points
 
-| Workflow | Purpose | Main Output |
-|---|---|---|
-| **Explore roles from my CV** | Start from the CV and discover suitable roles and jobs | Matching titles, relevant job listings, tailored CV, cover letter, match report |
-| **I already have a job in mind** | Compare a CV directly against a known job | Match analysis, tailored CV, cover letter, recommendations |
-| **Analyze my CV** | Evaluate the CV itself and discover best-fit roles | ATS analysis, strengths, improvements, top matching roles, optional tailoring |
+| Workflow                         | Purpose                                                | Main Output                                                                     |
+| -------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| **Explore roles from my CV**     | Start from the CV and discover suitable roles and jobs | Matching titles, relevant job listings, tailored CV, cover letter, match report |
+| **I already have a job in mind** | Compare a CV directly against a known job              | Match analysis, tailored CV, cover letter, recommendations                      |
+| **Analyze my CV**                | Evaluate the CV itself and discover best-fit roles     | ATS analysis, strengths, improvements, top matching roles, optional tailoring   |
 
 ### The core value loop
 
@@ -448,17 +448,17 @@ The generated payload for a tailoring workflow contains:
 
 ```json
 {
-  "old_matching_score": 0.0,
-  "new_matching_score": 0.0,
-  "missing_skills": ["string"],
-  "recommendations": [
-    {
-      "type": "Skill Gap",
-      "context": "string"
-    }
-  ],
-  "cv_latex": "valid LaTeX content",
-  "cover_letter_latex": "valid LaTeX content"
+    "old_matching_score": 0.0,
+    "new_matching_score": 0.0,
+    "missing_skills": ["string"],
+    "recommendations": [
+        {
+            "type": "Skill Gap",
+            "context": "string"
+        }
+    ],
+    "cv_latex": "valid LaTeX content",
+    "cover_letter_latex": "valid LaTeX content"
 }
 ```
 
@@ -596,26 +596,26 @@ The background worker is hosted separately on **Render** so the scheduled proces
 
 # Technology Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | React, Vite, Tailwind CSS |
-| Backend API | FastAPI |
-| Database | PostgreSQL |
-| Vector Search | pgvector |
-| Skill Extraction | RoBERTa-base (fine-tuned) |
-| Semantic Embeddings | all-mpnet-base-v2 |
-| LLM Providers | Groq, Gemini |
-| Job Scraping | Python-JobSpy |
-| Geolocation | IP-API |
-| Document Generation | LLM + prompt engineering |
-| LaTeX Compilation | Siglum WebAssembly / `@siglum/engine` |
-| Background Processing | FastAPI background worker |
-| Scheduling | Cron-Job.org |
-| Frontend Hosting | Vercel |
-| Backend Hosting | Vercel |
-| ML Hosting | Google Cloud Run |
-| Worker Hosting | Render |
-| Architecture | Microservices |
+| Layer                 | Technology                            |
+| --------------------- | ------------------------------------- |
+| Frontend              | React, Vite, Tailwind CSS             |
+| Backend API           | FastAPI                               |
+| Database              | PostgreSQL                            |
+| Vector Search         | pgvector                              |
+| Skill Extraction      | RoBERTa-base (fine-tuned)             |
+| Semantic Embeddings   | all-mpnet-base-v2                     |
+| LLM Providers         | Groq, Gemini                          |
+| Job Scraping          | Python-JobSpy                         |
+| Geolocation           | IP-API                                |
+| Document Generation   | LLM + prompt engineering              |
+| LaTeX Compilation     | Siglum WebAssembly / `@siglum/engine` |
+| Background Processing | FastAPI background worker             |
+| Scheduling            | Cron-Job.org                          |
+| Frontend Hosting      | Vercel                                |
+| Backend Hosting       | Vercel                                |
+| ML Hosting            | Google Cloud Run                      |
+| Worker Hosting        | Render                                |
+| Architecture          | Microservices                         |
 
 ---
 
@@ -643,9 +643,9 @@ The current application intentionally requires the user to configure an LLM prov
 
 ### Supported providers
 
-| Provider | Purpose |
-|---|---|
-| **Groq** | LLM-powered analysis and generation |
+| Provider   | Purpose                             |
+| ---------- | ----------------------------------- |
+| **Groq**   | LLM-powered analysis and generation |
 | **Gemini** | LLM-powered analysis and generation |
 
 The selected provider and API key are used when the workflow reaches the LLM stages.
@@ -781,17 +781,17 @@ _Add team members, supervisors, repository links, and contact information here b
 
 The README intentionally places the supplied screenshots near the feature they demonstrate:
 
-| Asset | README section | Purpose |
-|---|---|---|
-| `landing.png` | Landing Page | Product positioning / hero |
-| `start-explore.png` | Choose a Workflow | Three main entry points |
-| `settings.png` | Settings and AI Models | Groq / Gemini configuration |
-| `how-it-works.png` | Product Walkthrough (optional gallery) | Full pipeline overview |
-| `job-titles.png` | Roles Explorer | Recommended roles + email alerts |
-| `job-listings.png` | Matching Listings | Ranked live jobs |
-| `results.png` | Tailoring Results | Score improvement + recommendations |
-| `direct-tailor.png` | Direct Job Tailor | Direct target-job workflow |
-| `loading-game.png` | Loading Game | Interactive processing state |
+| Asset               | README section                         | Purpose                             |
+| ------------------- | -------------------------------------- | ----------------------------------- |
+| `landing.png`       | Landing Page                           | Product positioning / hero          |
+| `start-explore.png` | Choose a Workflow                      | Three main entry points             |
+| `settings.png`      | Settings and AI Models                 | Groq / Gemini configuration         |
+| `how-it-works.png`  | Product Walkthrough (optional gallery) | Full pipeline overview              |
+| `job-titles.png`    | Roles Explorer                         | Recommended roles + email alerts    |
+| `job-listings.png`  | Matching Listings                      | Ranked live jobs                    |
+| `results.png`       | Tailoring Results                      | Score improvement + recommendations |
+| `direct-tailor.png` | Direct Job Tailor                      | Direct target-job workflow          |
+| `loading-game.png`  | Loading Game                           | Interactive processing state        |
 
 ---
 
