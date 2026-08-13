@@ -698,24 +698,6 @@ Candidates should keep all generated claims truthful. Tailoring should improve p
 
 ---
 
-# Privacy and Security Notes
-
-Because 3adeny processes CVs and can handle email addresses and model API keys, production deployment should treat these inputs as sensitive.
-
-Recommended production practices include:
-
-- never commit real API keys to source control;
-- never publish real user CVs, emails, or scraped private data in the repository;
-- minimize retention of personal data;
-- document exactly where CV data is stored and for how long;
-- protect service-to-service communication;
-- add rate limiting and abuse protection around public inference endpoints;
-- provide a clear deletion mechanism for stored alert registrations and candidate data;
-- verify that job scraping complies with the policies and terms of the upstream job sites;
-- keep credentials and infrastructure secrets in deployment secret managers rather than frontend source code.
-
----
-
 # Future Improvements
 
 The architecture is designed to support expansion beyond the current MVP.
