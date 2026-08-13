@@ -489,8 +489,9 @@ I-SKILL
 The training process combined:
 
 1. A large LinkedIn job-posting dataset from Kaggle with **1M+ rows** in the source dataset.
-2. A manually scraped LinkedIn job corpus of approximately **36K rows**, where many old/removed jobs had disappeared from the original source.
-3. A Hugging Face resume dataset containing resume text and associated skills.
+2. A small CV ATS Scoring dataset from Kaggle that contains cv text and entites from that text.
+3. A manually scraped LinkedIn job corpus of approximately **36K rows**, where many old/removed jobs had disappeared from the original source.
+4. A Hugging Face resume dataset containing resume text and associated skills.
 
 ### Data processing
 
@@ -750,6 +751,8 @@ The architecture is designed to support expansion beyond the current MVP.
 ### Datasets
 
 - **Hugging Face Resumes Dataset** — resume text and associated skills.
+- **ATS Scoring Dataset** — Kaggle dataset used as a source for CV text and keywords.
+  https://www.kaggle.com/datasets/mgmitesh/ats-scoring-dataset
 - **1.3M LinkedIn Jobs and Skills 2024** — Kaggle dataset used as a source for LinkedIn job and skill information.  
   https://www.kaggle.com/datasets/asaniczka/1-3m-linkedin-jobs-and-skills-2024?select=job_skills.csv
 - **LinkedIn Data Engineer Job Postings** — Kaggle dataset used for job-title/skill processing.  
@@ -792,21 +795,6 @@ The README intentionally places the supplied screenshots near the feature they d
 | `results.png`       | Tailoring Results                      | Score improvement + recommendations |
 | `direct-tailor.png` | Direct Job Tailor                      | Direct target-job workflow          |
 | `loading-game.png`  | Loading Game                           | Interactive processing state        |
-
----
-
-## Final publication checklist
-
-Before publishing the public README/repository, replace or verify the following:
-
-- [ ] Replace `YOUR_PLATFORM_URL` with the real deployed platform URL.
-- [ ] Add the project/team repository URL if desired.
-- [ ] Add team members and NTI supervisor/instructor names where appropriate.
-- [ ] Confirm dataset licenses and redistribution permissions.
-- [ ] Ensure no private `.env` values or real API keys appear in screenshots, commits, or documentation.
-- [ ] Confirm whether the public repository should include model cards or Hugging Face model links.
-- [ ] Add a license for the **documentation/repository** if the team wants others to reuse it.
-- [ ] Consider adding a separate `SECURITY.md` and `PRIVACY.md` before public launch.
 
 ---
 
