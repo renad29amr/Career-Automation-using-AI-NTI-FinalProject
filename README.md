@@ -50,7 +50,6 @@
 - [API-Key Model](#api-key-model)
 - [Project Status](#project-status)
 - [Limitations and Responsible Use](#limitations-and-responsible-use)
-- [Privacy and Security Notes](#privacy-and-security-notes)
 - [Future Improvements](#future-improvements)
 - [References](#references)
 - [Team / Credits](#team--credits)
